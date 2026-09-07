@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample Help Desk</title>
+<meta name="description" content="Sample help desk for demonstration.">
+<meta name="theme-color" content="#0a1f44">
+<link rel="stylesheet" href="/css/arahOS/arahOS-tokens.css">
+<link rel="stylesheet" href="/css/arahOS/arahOS-client-portal.css">
+</head>
+<body>
+<div id="container">
+<div id="header">
+  <a class="arahOS-header-logo" id="logo" href="/showcase/landing.html" title="Support Center">
+    <img src="/showcase/images/arahOS/arahOS-banner-logo.png" alt="Sample Help Desk">
+  </a>
+  <div class="arahOS-header-right">
+    <ul id="nav" class="arahOS-header-nav">
+      <li><a class="active" href="/showcase/landing.html">Support Center Home</a></li>
+      <li><a href="/showcase/staff-dashboard.html">Knowledgebase</a></li>
+      <li><a href="/showcase/staff-dashboard.html">Open a New Ticket</a></li>
+      <li><a href="/showcase/staff-dashboard.html">Check Ticket Status</a></li>
+    </ul>
+    <div class="arahOS-header-user">
+      <span class="arahOS-guest">Guest User</span> <span class="arahOS-sep">|</span>
+      <a href="/showcase/agent-login.html">Sign In</a>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div id="content">
+
+  <!-- HERO — search front and center -->
+  <div class="arahOS-hero">
+    <div class="arahOS-hero-inner">
+      <h1 class="arahOS-hero-title">How can we help you today?</h1>
+      <p class="arahOS-hero-sub"><strong>Welcome to the Sample Help Desk.</strong><br>Search the knowledge base for answers, or open a ticket and our team will get back to you.</p>
+      <form class="arahOS-hero-search" method="get" action="/showcase/landing.html">
+        <input type="text" name="q" class="arahOS-hero-input" placeholder="Search for help… e.g. password, wifi, email" aria-label="Search our knowledge base">
+        <button type="submit" class="arahOS-hero-btn">Search</button>
+      </form>
+      <div class="arahOS-hero-actions">
+        <a href="#" class="arahOS-cta arahOS-cta-gold">Open a New Ticket</a>
+        <a href="#" class="arahOS-cta arahOS-cta-outline">Check Ticket Status</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="landing_page" class="arahOS-landing">
+  <div class="arahOS-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="arahOS-col-left">
+      <div class="arahOS-left-buttons">
+        <a href="#" class="arahOS-side-btn arahOS-side-btn-gold">Open a New Ticket</a>
+        <a href="#" class="arahOS-side-btn arahOS-side-btn-gold2">Check Ticket Status</a>
+      </div>
+      <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:16px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.05)">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+          <strong style="font-size:.88rem;color:#0a1f44">System Status</strong>
+          <span style="font-size:.78rem;font-weight:600;color:#1e8e5a"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#1e8e5a;margin-right:6px;vertical-align:middle"></span>All Systems Operational</span>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;padding-top:8px;border-top:1px solid #f3f4f6">
+          <div style="flex:1;min-width:55px;text-align:center"><div style="font-size:.6rem;color:#9ca3af;text-transform:uppercase">CPU</div><div style="font-size:.76rem;font-weight:700;color:#374151">23%</div></div>
+          <div style="flex:1;min-width:55px;text-align:center"><div style="font-size:.6rem;color:#9ca3af;text-transform:uppercase">Disk</div><div style="font-size:.76rem;font-weight:700;color:#374151">41%</div></div>
+          <div style="flex:1;min-width:55px;text-align:center"><div style="font-size:.6rem;color:#9ca3af;text-transform:uppercase">Memory</div><div style="font-size:.76rem;font-weight:700;color:#374151">37%</div></div>
+          <div style="flex:1;min-width:55px;text-align:center"><div style="font-size:.6rem;color:#9ca3af;text-transform:uppercase">Uptime</div><div style="font-size:.76rem;font-weight:700;color:#374151">42d</div></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CENTER -->
+    <main class="arahOS-col-main">
+      <div class="thread-body arahOS-intro">
+        <h2>Welcome to the Support Center</h2>
+        <p>This is a sample help desk for demonstration. Submit a support ticket and our team will get back to you.</p>
+        <h3>How it works</h3>
+        <p><strong>1. Open a ticket</strong> — Describe your issue and we will assign a technician. You will get a confirmation email with your ticket number.</p>
+        <p><strong>2. Track progress</strong> — Use your ticket number to check status, read updates, and reply to your technician online.</p>
+        <p><strong>3. Get it resolved</strong> — We provide complete archives of all your support requests for your reference.</p>
+      </div>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="arahOS-col-right">
+      <div class="arahOS-frontpage arahOS-frontpage-side">
+        <div class="arahOS-frontpage-head">
+          <h2>Important Information</h2>
+          <p>Quick answers from the IT team.</p>
+        </div>
+        <div class="arahOS-accordion">
+          <div class="arahOS-acc-item">
+            <button type="button" class="arahOS-acc-toggle" aria-expanded="false">
+              <span class="arahOS-acc-q">How to request a new email account</span>
+              <span class="arahOS-acc-chevron" aria-hidden="true">&#9662;</span>
+            </button>
+            <div class="arahOS-acc-body" hidden><div class="arahOS-acc-answer"><p>Submit a ticket and IT will provision your account within one business day.</p></div></div>
+          </div>
+          <div class="arahOS-acc-item">
+            <button type="button" class="arahOS-acc-toggle" aria-expanded="false">
+              <span class="arahOS-acc-q">Reporting a classroom technology outage</span>
+              <span class="arahOS-acc-chevron" aria-hidden="true">&#9662;</span>
+            </button>
+            <div class="arahOS-acc-body" hidden><div class="arahOS-acc-answer"><p>Open a "Report a Problem" ticket with the room number and equipment ID.</p></div></div>
+          </div>
+          <div class="arahOS-acc-item">
+            <button type="button" class="arahOS-acc-toggle" aria-expanded="false">
+              <span class="arahOS-acc-q">Password reset help</span>
+              <span class="arahOS-acc-chevron" aria-hidden="true">&#9662;</span>
+            </button>
+            <div class="arahOS-acc-body" hidden><div class="arahOS-acc-answer"><p>Use the self-service reset link on the sign-in page or call the help desk.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+  <div class="clear"></div>
+  </div>
+
+</div>
+<div id="footer">
+  <p style="text-align:center;font-size:.8rem;color:#6b7280">Copyright &copy; Sample Help Desk — All rights reserved.</p>
+</div>
+</div>
+
+<script src="/js/arahOS/arahOS-client-portal.js"></script>
+<script src="/js/arahOS/arahOS-landing.js"></script>
+</body>
+</html>

@@ -78,7 +78,7 @@
    surfaces and the text together so contrast stays correct.
    ============================================================ */
 [data-theme="dark"],
-bodyarahOS-dark {
+body.arahOS-dark {
   --arahOS-white:      #1b202a;
   --arahOS-gray-50:    #14181f;
   --arahOS-gray-100:   #1b202a;

@@ -328,7 +328,7 @@ select:focus {
 }
 
 /* ---------- Dark mode toggle (injected by JS) ---------- */
-arahOS-theme-toggle {
+.arahOS-theme-toggle {
   background: none !important;
   border: 1px solid rgba(255,255,255,0.25) !important;
   color: #fff !important;
@@ -341,10 +341,10 @@ arahOS-theme-toggle {
   cursor: pointer !important;
   margin-left: 8px !important;
 }
-arahOS-theme-toggle:hover { background: rgba(255,255,255,0.1) !important; }
+.arahOS-theme-toggle:hover { background: rgba(255,255,255,0.1) !important; }
 
 /* ---------- Mobile sidebar toggle (injected by JS) ---------- */
-arahOS-sidebar-toggle {
+.arahOS-sidebar-toggle {
   display: none !important;
   background: none !important;
   border: none !important;
@@ -367,7 +367,7 @@ arahOS-sidebar-toggle {
 }
 
 @media (max-width: 768px) {
-  arahOS-sidebar-toggle {
+  .arahOS-sidebar-toggle {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -390,19 +390,19 @@ arahOS-sidebar-toggle {
     overflow-y: auto !important;
     padding-top: 10px !important;
   }
-  #sub_navarahOS-sidebar-open,
-  #sidebararahOS-sidebar-open,
-  .sidebararahOS-sidebar-open {
+  #sub_nav.arahOS-sidebar-open,
+  #sidebar.arahOS-sidebar-open,
+  .sidebar.arahOS-sidebar-open {
     transform: translateX(0) !important;
   }
-  arahOS-sidebar-backdrop {
+  .arahOS-sidebar-backdrop {
     display: none !important;
     position: fixed !important;
     inset: 0 !important;
     background: rgba(10,31,68,0.4) !important;
     z-index: 900 !important;
   }
-  arahOS-sidebar-backdroparahOS-sidebar-open {
+  ..arahOS-sidebar-backdrop.arahOS-sidebar-open {
     display: block !important;
   }
 

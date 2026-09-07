@@ -3,40 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>arahOS Help Desk :: Agent Login</title>
+<title>Sample Help Desk :: Agent Login</title>
 <link rel="stylesheet" href="/css/arahOS/arahOS-tokens.css?v=3">
-<link rel="stylesheet" href="/css/arahOS/arahOS-client-portal.css?v=34">
 <link rel="stylesheet" href="/css/arahOS/arahOS-agent-login.css?v=3">
 </head>
-<body class="vl-body">
-<div class="vl-wrap">
-  <section class="vl-card">
-    <div class="vl-brandline">
-      <img class="vl-banner-logo" src="/showcase/images/arahOS/arahOS-banner-logo.png" alt="arahOS Help Desk">
+<body id="loginBody">
+<div id="arahOS-login-wrap">
+
+  <!-- ================= LEFT: credentials ================= -->
+  <div id="arahOS-login-left">
+    <div id="arahOS-login-card">
+
+      <div class="vl-brandline vl-brandline-logo">
+        <img class="vl-banner-logo" src="/showcase/images/arahOS/arahOS-banner-logo.png" alt="Sample Help Desk">
+      </div>
+
+      <h2>Sample Help Desk</h2>
+      <p class="vl-sub">Enter your network credentials</p>
+
+      <h3 id="login-message" class="vl-msg">Authentication Required</h3>
+
+      <form method="post" action="#">
+        <div class="vl-field">
+          <i>&#128100;</i>
+          <input type="text" name="userid" placeholder="firstname.lastname" autocorrect="off" autocapitalize="off">
+        </div>
+        <div class="vl-field">
+          <i>&#128274;</i>
+          <input type="password" name="passwd" maxlength="128" placeholder="Password" autocorrect="off" autocapitalize="off">
+        </div>
+        <p class="vl-hint">
+          Sign in with your username (e.g. <strong>firstname.lastname</strong>).<br>
+          You may also use your full network email address.
+        </p>
+        <button class="vl-signin" type="submit">Sign in</button>
+
+        <div class="vl-links">
+          <div class="row">
+            <a id="reset-link" class="vl-reset" href="#">Forgot My Password</a>
+          </div>
+        </div>
+      </form>
+
+      <div class="vl-foot">
+        <div class="content">Copyright &copy; Sample Help Desk</div>
+      </div>
+
     </div>
-    <h1>arahOS Help Desk</h1>
-    <p class="vl-sub">Enter your arahOS network credentials</p>
-    <h3>Authentication Required</h3>
-    <form method="post" action="/scp/login.php">
-      <div class="vl-field"><span class="vl-icon">&#128100;</span><input type="text" name="username" placeholder="firstname.lastname" required></div>
-      <div class="vl-field"><span class="vl-icon">&#128274;</span><input type="password" name="passwd" placeholder="Password" required></div>
-      <button type="submit" class="vl-btn">Sign in</button>
-    </form>
-  </section>
-  <aside class="vl-panel">
-    <h3>Support services</h3>
-    <p class="vl-panelsub">arahOS help desk status &amp; contact channels.</p>
-    <div class="vl-tiles">
-      <div class="vl-tile"><div class="num">3</div><div class="lbl">Open Tickets</div></div>
-      <div class="vl-tile"><div class="num">7</div><div class="lbl">Active Users</div></div>
-      <div class="vl-tile"><div class="num">1</div><div class="lbl">Open Tasks</div></div>
-      <div class="vl-tile"><div class="num">100%</div><div class="lbl">Uptime</div></div>
+  </div>
+
+  <!-- ================= RIGHT: status dashboard ================= -->
+  <div id="arahOS-login-right">
+    <div class="vl-panel">
+      <h3>Support services</h3>
+      <p class="vl-panelsub">Sample help desk status &amp; contact channels.</p>
+
+      <span class="vl-allok"><span class="dot"></span> All systems operational</span>
+
+      <div class="vl-grid">
+        <div class="vl-svc">
+          <div class="h">&#10003; Help desk</div>
+          <div class="st">Operational</div>
+          <div class="d">Ticketing system online</div>
+        </div>
+        <div class="vl-svc">
+          <div class="h">&#128272; LDAP / AD</div>
+          <div class="st">Operational</div>
+          <div class="d">Directory reachable over LDAPS</div>
+        </div>
+        <div class="vl-svc">
+          <div class="h">&#9993; Email delivery</div>
+          <div class="st">Operational</div>
+          <div class="d">SMTP relay responding</div>
+        </div>
+        <div class="vl-svc">
+          <div class="h">&#128222; Phone support</div>
+          <div class="st" style="color:#6db3ff;">Available</div>
+          <div class="d">Mon&ndash;Fri 8:00&ndash;16:30</div>
+        </div>
+      </div>
+
+      <div class="vl-tiles">
+        <div class="vl-tile"><b>24/7</b> Monitoring</div>
+        <div class="vl-tile"><b>SLA</b> Tracked</div>
+        <div class="vl-tile"><b>IT</b> Help Desk</div>
+      </div>
+
+      <div class="vl-checked">Last checked: just now</div>
     </div>
-    <p class="vl-foot">arahOS help desk operations are running normally.</p>
-    <p class="vl-foot">Last checked: <?php echo date("M j, Y \&\middot; g:ia"); ?></p>
-  </aside>
+  </div>
+
 </div>
-<a class="vl-oscar" href="#">osTicket</a>
-<script src="/js/arahOS/arahOS-client-portal.js"></script>
 </body>
 </html>

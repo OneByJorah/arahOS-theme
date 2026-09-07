@@ -68,10 +68,18 @@ function arahOSLoadStatus(){
     d.services.forEach(function(s){
       var row=document.createElement('div');row.style.cssText='display:flex;align-items:center;justify-content:space-between;padding:4px 0;border-bottom:1px solid #f3f4f6';
       var dot=s.status==='up'?'#1e8e5a':'#d64545';
-      var nm=document.createElement('span');nm.style.cssText='font-size:.8rem;color:#374151';nm.innerHTML='<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+dot+';margin-right:6px"></span>'+(icons[s.icon]||'\u25CF')+' '+s.name;
+      var nm=document.createElement('span');nm.style.cssText='font-size:.8rem;color:#374151';
+      var nmDot=document.createElement('span');nmDot.style.cssText='display:inline-block;width:8px;height:8px;border-radius:50%;background:'+dot+';margin-right:6px';
+      nm.appendChild(nmDot);
+      nm.appendChild(document.createTextNode((icons[s.icon]||'\u25CF')+' '));
+      nm.appendChild(document.createTextNode(String(s.name)));
       var st=document.createElement('span');st.style.cssText='font-size:.72rem;font-weight:700;text-transform:uppercase;color:'+dot;
-      var lt=s.latency!==null&&s.latency>0?' <span style="font-size:.64rem;font-weight:400;color:#9ca3af">'+s.latency+'ms</span>':'';
-      st.innerHTML=s.status==='up'?'Operational'+lt:'Down'+lt;
+      st.textContent=s.status==='up'?'Operational':'Down';
+      if(s.latency!==null&&s.latency>0){
+        var lt=document.createElement('span');lt.style.cssText='font-size:.64rem;font-weight:400;color:#9ca3af';
+        lt.textContent=' '+s.latency+'ms';
+        st.appendChild(lt);
+      }
       row.appendChild(nm);row.appendChild(st);list.appendChild(row);
     });
     if(d.server){

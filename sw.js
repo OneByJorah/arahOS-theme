@@ -15,7 +15,7 @@ const PRECACHE = [
   '/css/arahOS/arahOS-tokens.css',
   '/css/arahOS/arahOS-client-portal.css',
   '/js/arahOS/arahOS-client-portal.js',
-  '/images/arahOS/viseal.png',
+  '/images/arahOS/arahOS-seal.png',
   '/images/arahOS/pwa/icon-192.png',
   '/images/arahOS/pwa/icon-512.png'
 ];

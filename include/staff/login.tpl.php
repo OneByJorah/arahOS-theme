@@ -58,7 +58,7 @@ $checked = date('M j, Y · g:ia');
             </div>
             <p class="vl-hint">
               Sign in with your username (e.g. <strong>firstname.lastname</strong>).<br>
-              You may also use <strong>firstname.lastname@arahOS.vi</strong> or <strong>firstname.lastname@k12.vi</strong>.
+              You may also use your full network email address.
             </p>
             <button class="vl-signin" type="submit" name="submit"><?php echo __('Sign in'); ?></button>
 
