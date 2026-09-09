@@ -11,7 +11,7 @@ A modern navy & gold theme for [osTicket](https://osticket.com) 1.18.x, branded 
 ---
 
 <p align="center">
-  <img src="screenshots/agent-login.png" alt="arahos-osticket-theme preview" width="90%">
+  <img src="screenshots/agent-login.png" alt="arahOS-osticket-theme preview" width="90%">
 </p>
 
 A modern navy & gold theme for [osTicket](https://osticket.com) 1.18.x, branded for the **arahOS** organization.
