@@ -1,10 +1,8 @@
 <div align="center">
 
-![arahos-osticket-theme banner](docs/assets/banner.svg)
+![arahOS-osticket-theme banner](docs/assets/banner.svg)
 
-# arahos-osticket-theme
-
-A modern branded theme and plugin for osTicket
+A modern navy & gold theme for [osTicket](https://osticket.com) 1.18.x, branded for the **arahOS** organization.
 
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 ![Language](https://img.shields.io/badge/language-CSS-blue)
