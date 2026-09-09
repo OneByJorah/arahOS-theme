@@ -4,7 +4,7 @@
 
 # arahos-osticket-theme
 
-Arahos: a modern branded theme and plugin for osTicket
+A modern branded theme and plugin for osTicket
 
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 ![Language](https://img.shields.io/badge/language-CSS-blue)
@@ -13,12 +13,12 @@ Arahos: a modern branded theme and plugin for osTicket
 ---
 
 <p align="center">
-  <img src="docs/assets/screenshot.png" alt="arahos-osticket-theme preview" width="90%">
+  <img src="screenshots/agent-login.png" alt="arahos-osticket-theme preview" width="90%">
 </p>
 
 A modern navy & gold theme for [osTicket](https://osticket.com) 1.18.x, branded for the **arahOS** organization.
 
-![Theme](https://img.shields.io/badge/osTicket-1.18.x-0a1f44) ![License](https://img.shields.io/badge/license-MIT-f2a900)
+![Theme](https://img.shields.io/badge/osTicket-1.18.x-0a1f44) ![License](https://img.shields.io/badge/license-MIT-f2a900) ![Status](https://img.shields.io/badge/status-Stable-brightgreen)
 
 ## Features
 
@@ -30,6 +30,16 @@ A modern navy & gold theme for [osTicket](https://osticket.com) 1.18.x, branded 
 - 🌗 **Working light/dark mode** toggle
 - 📱 **Fully responsive** — phone, tablet, laptop, desktop (breakpoints 380/480/600/768/900/1100px)
 - 📦 **PWA-ready** — install banner, service worker, offline page, manifest + square icons
+
+## Table of Contents
+
+- [Features](#features)
+- [Quick install](#quick-install)
+- [Manual install](#manual-install)
+- [Responsive showcase](#responsive-showcase)
+- [Customizing brand colors](#customizing-brand-colors)
+- [Compatibility](#compatibility)
+- [License](#license)
 
 ## Quick install (one command)
 
